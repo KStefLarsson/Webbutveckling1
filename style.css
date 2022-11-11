@@ -1,0 +1,245 @@
+/* Mobile first */ 
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header med meny */
+header {
+    display: flex;
+    flex-direction: row;
+    height: 15vh;
+    margin: auto;
+    align-items: center;
+    background: linear-gradient(to left, #585772, white);
+}
+
+.logo-container {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo-pic {
+    width: 40%;
+    margin-left: 10%;
+    filter: drop-shadow( 0px 5px 3px black );
+}
+
+.logo {
+    display: none;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-link {
+    font-size: 1em;
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    flex: 2 ;
+}
+
+/* min presentation */
+.presentation {
+    display: flex;
+    flex-direction: row;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin: auto;
+    height: 7vh;
+    align-items: center;
+}
+
+.presentation-pic {
+    display: flex;
+    flex: 1;
+    width: 1rem;
+}
+
+.presentation-info {
+    display: flex;
+    flex: 2;
+    justify-items: flex-end;
+    font-size: xx-small;
+    align-items: center;
+}
+
+.presentation-list {
+    display: flex;
+}
+
+h2 {
+    font-size: 0.7rem;
+    margin: 2% 4% 2% 4%;
+}
+
+.modern-pic {
+    display: flex;
+    float: right;
+    width: 5rem;
+    margin: 2%;
+}
+
+p {
+    font-size: 0.5rem;
+    margin: 2% 4% 2% 4%;
+}
+
+a {
+    text-decoration: none;
+    color: darkgrey;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid black;
+}
+
+.internet-pic {
+    display: flex;
+    float: right;
+    width: 8rem;
+    margin: 2%;
+}
+
+footer {
+    background: linear-gradient(to right, #585772, white);
+    width: 100%;
+    font-size: 0.5rem;
+}
+
+@media only screen and (max-width:999px) {
+
+    .WCAG {
+    display: none;
+    }
+}
+
+ /* Större skärm - Jag har gått efter en Ipad */ 
+
+@media only screen and (min-width:500px) {
+
+    * {
+        width: 95%;
+        margin: auto;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        justify-items: flex-start;
+    }
+
+    h6 {
+        width: 15%;
+        margin-left: 2%;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .presentation-pic {
+        width: 4.6rem;
+    }
+
+    .presentation-info {
+        
+        justify-items: flex-start;
+        font-size: xx-small;
+        
+    }
+
+    .internet-pic {
+        display: flex;
+        float: right;
+        max-width: 13rem;
+        margin: 2%;
+    }
+
+    header {
+        position: sticky;
+        top: 0px;
+        font-size: 20px;
+    }
+
+    .ankare {
+        position: relative;
+        top:-90px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+
+    .presentation-info {
+        
+        margin-left: 10%;
+        font-size: small;
+    }
+
+    .modern-pic {
+        width: 6rem;
+    }
+    
+}
+ 
+     /* Större skärmar - Min laptop =) */ 
+
+@media only screen and (min-width:1000px) {
+
+    .logo-pic {
+        width: 30%;
+        margin-left: 10%;
+        filter: drop-shadow( 0px 5px 3px black );
+    }
+
+    .presentation {
+        height: 9.5vh;
+    }
+
+    footer {
+        font-size: 18px;
+    }
+
+    .modern-pic {
+        width: 6rem;
+    }
+
+    .modern-pic:hover {
+        width: 20rem;
+    }
+
+    .internet-pic {
+        width: 20rem;
+    }
+
+    .internet-pic:hover {
+        width: 30rem;
+    }
+
+    h2 {
+        font-size: 2em;
+        background-color: lightgray;
+    }
+
+    .WCAG {
+        position: fixed;
+        right: 2%;
+        bottom: 2%;
+        
+    }
+
+   
+}
